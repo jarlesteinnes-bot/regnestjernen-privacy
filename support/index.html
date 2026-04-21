@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Stella Math / Regnestjernen</title>
+  <meta name="description" content="Support and FAQ for Stella Math / Regnestjernen. Contact, common questions, accessibility, and refund info.">
+  <meta name="robots" content="index,follow">
+
+  <link rel="alternate" hreflang="en" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=en">
+  <link rel="alternate" hreflang="nb" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=nb">
+  <link rel="alternate" hreflang="nn" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=nn">
+  <link rel="alternate" hreflang="sv" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=sv">
+  <link rel="alternate" hreflang="da" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=da">
+  <link rel="alternate" hreflang="fi" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=fi">
+  <link rel="alternate" hreflang="de" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=de">
+  <link rel="alternate" hreflang="fr" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=fr">
+  <link rel="alternate" hreflang="nl" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=nl">
+  <link rel="alternate" hreflang="es" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=es">
+  <link rel="alternate" hreflang="pt-BR" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=pt-BR">
+  <link rel="alternate" hreflang="it" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=it">
+  <link rel="alternate" hreflang="ja" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=ja">
+  <link rel="alternate" hreflang="ko" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=ko">
+  <link rel="alternate" hreflang="x-default" href="https://jarlesteinnes-bot.github.io/regnestjernen-privacy/support/?lang=en">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #1A0533;
+      --bg-soft: #2A0F4A;
+      --purple: #6C5CE7;
+      --gold: #F5C518;
+      --text: #F4F1FA;
+      --muted: rgba(244,241,250,0.75);
+      --border: rgba(255,255,255,0.12);
+    }
+    html, body { background: var(--bg); color: var(--text); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans JP", "Noto Sans KR", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #B8A4FF; text-decoration: underline; }
+    a:hover { color: #D7C8FF; }
+
+    header.page-head {
+      background: linear-gradient(135deg, #1A0533 0%, #3D1574 100%);
+      padding: 40px 20px 28px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    header.page-head h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 6px; }
+    header.page-head p { color: var(--muted); font-size: 0.95rem; }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 20px 20px 60px; }
+
+    .lang-picker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin: 16px 0 28px;
+      padding: 12px;
+      background: var(--bg-soft);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .lang-picker button {
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 13px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+      line-height: 1.2;
+    }
+    .lang-picker button:hover { background: rgba(108,92,231,0.18); border-color: var(--purple); }
+    .lang-picker button.active {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+
+    section.lang { margin-bottom: 32px; }
+    section.lang h2 {
+      font-size: 1.25rem;
+      margin: 24px 0 8px;
+      color: #fff;
+      border-left: 3px solid var(--gold);
+      padding-left: 10px;
+    }
+    section.lang h3 {
+      font-size: 1.05rem;
+      margin: 14px 0 4px;
+      color: #fff;
+    }
+    section.lang p { margin-bottom: 10px; color: var(--text); }
+    section.lang ul { padding-left: 22px; margin-bottom: 12px; }
+    section.lang li { margin-bottom: 6px; }
+    section.lang .lang-title {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    section.lang .contact-box {
+      background: linear-gradient(135deg, #2A0F4A, var(--purple));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      text-align: center;
+      margin: 14px 0 22px;
+    }
+    section.lang .contact-box a.btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #1A0533;
+      font-weight: 800;
+      padding: 12px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    section.lang details {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    section.lang summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 700;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: #fff;
+    }
+    section.lang summary::-webkit-details-marker { display: none; }
+    section.lang summary::after { content: "+"; font-size: 1.2rem; color: var(--gold); }
+    section.lang details[open] summary::after { content: "−"; }
+    section.lang details p, section.lang details ul {
+      padding: 0 16px 14px;
+      color: var(--text);
+    }
+    section.lang details ul { padding-left: 36px; }
+    section.lang .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+    hr.lang-sep {
+      border: 0;
+      border-top: 1px dashed var(--border);
+      margin: 28px 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 20px;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .js-on section.lang { display: none; }
+    .js-on section.lang.visible { display: block; }
+    .js-on hr.lang-sep { display: none; }
+
+    @media (max-width: 480px) {
+      header.page-head h1 { font-size: 1.4rem; }
+      .lang-picker button { font-size: 0.82rem; padding: 6px 10px; }
+      section.lang h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="page-head">
+  <h1>Stella Math / Regnestjernen</h1>
+  <p>Support &middot; Last updated: 2026-04-21</p>
+</header>
+
+<div class="wrap">
+
+  <nav class="lang-picker" id="langPicker" aria-label="Language picker">
+    <button type="button" data-lang="en" lang="en">English</button>
+    <button type="button" data-lang="nb" lang="nb">Norsk (Bokmål)</button>
+    <button type="button" data-lang="nn" lang="nn">Nynorsk</button>
+    <button type="button" data-lang="sv" lang="sv">Svenska</button>
+    <button type="button" data-lang="da" lang="da">Dansk</button>
+    <button type="button" data-lang="fi" lang="fi">Suomi</button>
+    <button type="button" data-lang="de" lang="de">Deutsch</button>
+    <button type="button" data-lang="fr" lang="fr">Français</button>
+    <button type="button" data-lang="nl" lang="nl">Nederlands</button>
+    <button type="button" data-lang="es" lang="es">Español</button>
+    <button type="button" data-lang="pt-BR" lang="pt-BR">Português (BR)</button>
+    <button type="button" data-lang="it" lang="it">Italiano</button>
+    <button type="button" data-lang="ja" lang="ja">日本語</button>
+    <button type="button" data-lang="ko" lang="ko">한국어</button>
+  </nav>
+
+  <main id="content">
+
+  <!-- ======= ENGLISH ======= -->
+  <section class="lang" data-lang="en" lang="en">
+    <div class="lang-title">Support</div>
+    <div class="meta">We usually reply within 1–2 business days.</div>
+
+    <h2>Contact us</h2>
+    <div class="contact-box">
+      <p>Email us at <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Send email</a>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <details>
+      <summary>How do I restore my subscription on a new device?</summary>
+      <p>Open the app, tap Settings → Restore purchases. Use the same Apple ID that made the original purchase.</p>
+    </details>
+
+    <details>
+      <summary>How do I change my child's age group?</summary>
+      <p>Go to Parent Panel → select profile → Age group.</p>
+    </details>
+
+    <details>
+      <summary>Is my child's data private?</summary>
+      <p>Yes. Nothing is sent to any server. See our <a href="/privacy/">Privacy Policy</a>.</p>
+    </details>
+
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <p>Go to iOS Settings → Apple ID → Subscriptions → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Does the app work offline?</summary>
+      <p>Yes, 100%. No internet needed.</p>
+    </details>
+
+    <details>
+      <summary>Is the app on Android?</summary>
+      <p>Not yet — iOS only for now.</p>
+    </details>
+
+    <h2>Report an issue</h2>
+    <p>Email <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> and include:</p>
+    <ul>
+      <li>Your device model.</li>
+      <li>Your iOS version.</li>
+      <li>A screenshot if possible.</li>
+    </ul>
+
+    <h2>Accessibility</h2>
+    <p>The app supports Dynamic Type and VoiceOver where relevant, and can be played with the Read-aloud setting enabled in Settings.</p>
+
+    <h2>Refunds</h2>
+    <p>Refunds are handled by Apple. Request one at <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Last updated: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= NORWEGIAN BOKMÅL ======= -->
+  <section class="lang" data-lang="nb" lang="nb">
+    <div class="lang-title">Støtte</div>
+    <div class="meta">Vi svarer vanligvis innen 1–2 virkedager.</div>
+
+    <h2>Kontakt oss</h2>
+    <div class="contact-box">
+      <p>Send e-post til <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Send e-post</a>
+    </div>
+
+    <h2>Vanlige spørsmål</h2>
+
+    <details>
+      <summary>Hvordan gjenoppretter jeg abonnementet på en ny enhet?</summary>
+      <p>Åpne appen, trykk Innstillinger → Gjenopprett kjøp. Bruk samme Apple ID som ble brukt ved det opprinnelige kjøpet.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan endrer jeg barnets aldersgruppe?</summary>
+      <p>Gå til Foreldrepanelet → velg profil → Aldersgruppe.</p>
+    </details>
+
+    <details>
+      <summary>Er barnets data privat?</summary>
+      <p>Ja. Ingenting sendes til noen server. Se <a href="/privacy/">Personvernerklæringen</a>.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan kansellerer jeg abonnementet?</summary>
+      <p>Gå til iOS-innstillinger → Apple ID → Abonnementer → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Fungerer appen uten internett?</summary>
+      <p>Ja, 100 %. Du trenger ikke internett.</p>
+    </details>
+
+    <details>
+      <summary>Finnes appen på Android?</summary>
+      <p>Ikke ennå — kun iOS foreløpig.</p>
+    </details>
+
+    <h2>Rapporter et problem</h2>
+    <p>Send e-post til <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> med:</p>
+    <ul>
+      <li>Enhetsmodell.</li>
+      <li>iOS-versjon.</li>
+      <li>Skjermbilde hvis mulig.</li>
+    </ul>
+
+    <h2>Tilgjengelighet</h2>
+    <p>Appen støtter Dynamisk tekst og VoiceOver der det er relevant, og kan spilles med Les høyt aktivert i Innstillinger.</p>
+
+    <h2>Refusjon</h2>
+    <p>Refusjon håndteres av Apple. Søk på <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Sist oppdatert: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= NORWEGIAN NYNORSK ======= -->
+  <section class="lang" data-lang="nn" lang="nn">
+    <div class="lang-title">Støtte</div>
+    <div class="meta">Vi svarar vanlegvis innan 1–2 verkedagar.</div>
+
+    <h2>Kontakt oss</h2>
+    <div class="contact-box">
+      <p>Send e-post til <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Send e-post</a>
+    </div>
+
+    <h2>Vanlege spørsmål</h2>
+
+    <details>
+      <summary>Korleis gjenopprettar eg abonnementet på ei ny eining?</summary>
+      <p>Opne appen, trykk Innstillingar → Gjenopprett kjøp. Bruk same Apple ID som blei brukt ved det opphavlege kjøpet.</p>
+    </details>
+
+    <details>
+      <summary>Korleis endrar eg aldersgruppa til barnet?</summary>
+      <p>Gå til Foreldrepanelet → vel profil → Aldersgruppe.</p>
+    </details>
+
+    <details>
+      <summary>Er data om barnet privat?</summary>
+      <p>Ja. Ingenting blir sendt til nokon server. Sjå <a href="/privacy/">Personvernerklæringa</a>.</p>
+    </details>
+
+    <details>
+      <summary>Korleis avsluttar eg abonnementet?</summary>
+      <p>Gå til iOS-innstillingar → Apple ID → Abonnement → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Fungerer appen utan internett?</summary>
+      <p>Ja, 100 %. Du treng ikkje internett.</p>
+    </details>
+
+    <details>
+      <summary>Finst appen på Android?</summary>
+      <p>Ikkje enno — berre iOS førebels.</p>
+    </details>
+
+    <h2>Rapporter eit problem</h2>
+    <p>Send e-post til <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> med:</p>
+    <ul>
+      <li>Eininga di.</li>
+      <li>iOS-versjon.</li>
+      <li>Skjermbilete om mogleg.</li>
+    </ul>
+
+    <h2>Tilgjenge</h2>
+    <p>Appen støttar Dynamisk tekst og VoiceOver der det er relevant, og kan spelast med Les høgt slått på i Innstillingar.</p>
+
+    <h2>Refusjon</h2>
+    <p>Refusjon blir handtert av Apple. Søk på <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Sist oppdatert: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= SWEDISH ======= -->
+  <section class="lang" data-lang="sv" lang="sv">
+    <div class="lang-title">Support</div>
+    <div class="meta">Vi svarar vanligtvis inom 1–2 arbetsdagar.</div>
+
+    <h2>Kontakta oss</h2>
+    <div class="contact-box">
+      <p>Mejla oss på <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Skicka e-post</a>
+    </div>
+
+    <h2>Vanliga frågor</h2>
+
+    <details>
+      <summary>Hur återställer jag min prenumeration på en ny enhet?</summary>
+      <p>Öppna appen, tryck på Inställningar → Återställ köp. Använd samma Apple ID som gjorde det ursprungliga köpet.</p>
+    </details>
+
+    <details>
+      <summary>Hur ändrar jag mitt barns åldersgrupp?</summary>
+      <p>Gå till Föräldrapanelen → välj profil → Åldersgrupp.</p>
+    </details>
+
+    <details>
+      <summary>Är mitt barns uppgifter privata?</summary>
+      <p>Ja. Ingenting skickas till någon server. Läs <a href="/privacy/">Integritetspolicyn</a>.</p>
+    </details>
+
+    <details>
+      <summary>Hur avslutar jag min prenumeration?</summary>
+      <p>Gå till iOS Inställningar → Apple ID → Prenumerationer → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Fungerar appen offline?</summary>
+      <p>Ja, till 100 %. Inget internet behövs.</p>
+    </details>
+
+    <details>
+      <summary>Finns appen på Android?</summary>
+      <p>Inte ännu — endast iOS för tillfället.</p>
+    </details>
+
+    <h2>Rapportera ett problem</h2>
+    <p>Mejla <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> och inkludera:</p>
+    <ul>
+      <li>Enhetsmodell.</li>
+      <li>iOS-version.</li>
+      <li>Skärmdump om möjligt.</li>
+    </ul>
+
+    <h2>Tillgänglighet</h2>
+    <p>Appen stöder Dynamisk text och VoiceOver där det är relevant, och kan spelas med Läs upp aktiverat i Inställningar.</p>
+
+    <h2>Återbetalning</h2>
+    <p>Återbetalningar hanteras av Apple. Ansök på <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Senast uppdaterad: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= DANISH ======= -->
+  <section class="lang" data-lang="da" lang="da">
+    <div class="lang-title">Support</div>
+    <div class="meta">Vi svarer normalt inden for 1–2 hverdage.</div>
+
+    <h2>Kontakt os</h2>
+    <div class="contact-box">
+      <p>Skriv til <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Send e-mail</a>
+    </div>
+
+    <h2>Ofte stillede spørgsmål</h2>
+
+    <details>
+      <summary>Hvordan gendanner jeg mit abonnement på en ny enhed?</summary>
+      <p>Åbn appen, tryk på Indstillinger → Gendan køb. Brug samme Apple ID, som blev brugt til det oprindelige køb.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan ændrer jeg mit barns aldersgruppe?</summary>
+      <p>Gå til Forældrepanelet → vælg profil → Aldersgruppe.</p>
+    </details>
+
+    <details>
+      <summary>Er mit barns data private?</summary>
+      <p>Ja. Intet sendes til nogen server. Se <a href="/privacy/">Privatlivspolitikken</a>.</p>
+    </details>
+
+    <details>
+      <summary>Hvordan opsiger jeg mit abonnement?</summary>
+      <p>Gå til iOS-indstillinger → Apple ID → Abonnementer → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Virker appen offline?</summary>
+      <p>Ja, 100 %. Ingen internet nødvendig.</p>
+    </details>
+
+    <details>
+      <summary>Findes appen til Android?</summary>
+      <p>Ikke endnu — kun iOS indtil videre.</p>
+    </details>
+
+    <h2>Rapportér et problem</h2>
+    <p>Skriv til <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> med:</p>
+    <ul>
+      <li>Enhedsmodel.</li>
+      <li>iOS-version.</li>
+      <li>Skærmbillede hvis muligt.</li>
+    </ul>
+
+    <h2>Tilgængelighed</h2>
+    <p>Appen understøtter Dynamisk tekst og VoiceOver hvor relevant, og kan spilles med Læs højt aktiveret i Indstillinger.</p>
+
+    <h2>Refusion</h2>
+    <p>Refusioner håndteres af Apple. Ansøg på <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Senest opdateret: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= FINNISH ======= -->
+  <section class="lang" data-lang="fi" lang="fi">
+    <div class="lang-title">Tuki</div>
+    <div class="meta">Vastaamme yleensä 1–2 arkipäivässä.</div>
+
+    <h2>Yhteystiedot</h2>
+    <div class="contact-box">
+      <p>Lähetä sähköpostia: <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Lähetä sähköpostia</a>
+    </div>
+
+    <h2>Usein kysytyt kysymykset</h2>
+
+    <details>
+      <summary>Miten palautan tilauksen uudelle laitteelle?</summary>
+      <p>Avaa sovellus, valitse Asetukset → Palauta ostot. Käytä samaa Apple ID:tä, jolla alkuperäinen osto tehtiin.</p>
+    </details>
+
+    <details>
+      <summary>Miten vaihdan lapsen ikäryhmän?</summary>
+      <p>Avaa Vanhempien paneeli → valitse profiili → Ikäryhmä.</p>
+    </details>
+
+    <details>
+      <summary>Ovatko lapseni tiedot yksityisiä?</summary>
+      <p>Kyllä. Mitään ei lähetetä palvelimille. Katso <a href="/privacy/">tietosuojakäytäntö</a>.</p>
+    </details>
+
+    <details>
+      <summary>Miten peruutan tilauksen?</summary>
+      <p>Mene iOS:n Asetukset → Apple ID → Tilaukset → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Toimiiko sovellus ilman verkkoyhteyttä?</summary>
+      <p>Kyllä, 100 %. Internetiä ei tarvita.</p>
+    </details>
+
+    <details>
+      <summary>Onko sovellus Androidilla?</summary>
+      <p>Ei vielä — toistaiseksi vain iOS.</p>
+    </details>
+
+    <h2>Ilmoita ongelmasta</h2>
+    <p>Lähetä sähköpostia <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> ja kerro:</p>
+    <ul>
+      <li>Laitteesi malli.</li>
+      <li>iOS-versio.</li>
+      <li>Kuvakaappaus, jos mahdollista.</li>
+    </ul>
+
+    <h2>Saavutettavuus</h2>
+    <p>Sovellus tukee dynaamista tekstiä ja VoiceOveria tarvittaessa, ja sitä voi pelata Lue ääneen -asetuksen ollessa päällä.</p>
+
+    <h2>Palautukset</h2>
+    <p>Apple käsittelee palautukset. Pyydä palautusta: <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Viimeksi päivitetty: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= GERMAN ======= -->
+  <section class="lang" data-lang="de" lang="de">
+    <div class="lang-title">Support</div>
+    <div class="meta">Wir antworten in der Regel innerhalb von 1–2 Werktagen.</div>
+
+    <h2>Kontakt</h2>
+    <div class="contact-box">
+      <p>Schreiben Sie an <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">E-Mail senden</a>
+    </div>
+
+    <h2>Häufige Fragen</h2>
+
+    <details>
+      <summary>Wie stelle ich mein Abo auf einem neuen Gerät wieder her?</summary>
+      <p>App öffnen, Einstellungen → Käufe wiederherstellen. Verwenden Sie die gleiche Apple ID wie beim ursprünglichen Kauf.</p>
+    </details>
+
+    <details>
+      <summary>Wie ändere ich die Altersgruppe meines Kindes?</summary>
+      <p>Elternbereich → Profil wählen → Altersgruppe.</p>
+    </details>
+
+    <details>
+      <summary>Sind die Daten meines Kindes privat?</summary>
+      <p>Ja. Es wird nichts an einen Server gesendet. Siehe <a href="/privacy/">Datenschutzerklärung</a>.</p>
+    </details>
+
+    <details>
+      <summary>Wie kündige ich mein Abo?</summary>
+      <p>iOS-Einstellungen → Apple ID → Abonnements → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Funktioniert die App offline?</summary>
+      <p>Ja, zu 100 %. Kein Internet erforderlich.</p>
+    </details>
+
+    <details>
+      <summary>Gibt es die App für Android?</summary>
+      <p>Noch nicht — vorerst nur für iOS.</p>
+    </details>
+
+    <h2>Problem melden</h2>
+    <p>Schreiben Sie an <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> mit:</p>
+    <ul>
+      <li>Gerätemodell.</li>
+      <li>iOS-Version.</li>
+      <li>Screenshot, wenn möglich.</li>
+    </ul>
+
+    <h2>Barrierefreiheit</h2>
+    <p>Die App unterstützt Dynamic Type und VoiceOver an den relevanten Stellen und kann mit der „Vorlesen"-Einstellung in den Einstellungen gespielt werden.</p>
+
+    <h2>Rückerstattung</h2>
+    <p>Rückerstattungen werden von Apple bearbeitet. Antrag unter <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Zuletzt aktualisiert: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= FRENCH ======= -->
+  <section class="lang" data-lang="fr" lang="fr">
+    <div class="lang-title">Assistance</div>
+    <div class="meta">Nous répondons généralement sous 1 à 2 jours ouvrés.</div>
+
+    <h2>Nous contacter</h2>
+    <div class="contact-box">
+      <p>Écrivez-nous à <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Envoyer un e-mail</a>
+    </div>
+
+    <h2>Questions fréquentes</h2>
+
+    <details>
+      <summary>Comment restaurer mon abonnement sur un nouvel appareil ?</summary>
+      <p>Ouvrez l'app, appuyez sur Réglages → Restaurer les achats. Utilisez l'identifiant Apple ayant servi à l'achat initial.</p>
+    </details>
+
+    <details>
+      <summary>Comment modifier la tranche d'âge de mon enfant ?</summary>
+      <p>Allez dans le Panneau parental → choisissez le profil → Tranche d'âge.</p>
+    </details>
+
+    <details>
+      <summary>Les données de mon enfant sont-elles privées ?</summary>
+      <p>Oui. Rien n'est envoyé à un serveur. Voir la <a href="/privacy/">politique de confidentialité</a>.</p>
+    </details>
+
+    <details>
+      <summary>Comment résilier mon abonnement ?</summary>
+      <p>Réglages iOS → Identifiant Apple → Abonnements → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>L'app fonctionne-t-elle hors ligne ?</summary>
+      <p>Oui, à 100 %. Aucune connexion Internet nécessaire.</p>
+    </details>
+
+    <details>
+      <summary>L'app est-elle disponible sur Android ?</summary>
+      <p>Pas encore — iOS uniquement pour l'instant.</p>
+    </details>
+
+    <h2>Signaler un problème</h2>
+    <p>Écrivez à <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> en précisant :</p>
+    <ul>
+      <li>Votre modèle d'appareil.</li>
+      <li>Votre version d'iOS.</li>
+      <li>Une capture d'écran si possible.</li>
+    </ul>
+
+    <h2>Accessibilité</h2>
+    <p>L'app prend en charge Dynamic Type et VoiceOver là où c'est pertinent, et peut être utilisée avec l'option Lire à haute voix activée dans les Réglages.</p>
+
+    <h2>Remboursements</h2>
+    <p>Les remboursements sont gérés par Apple. Demandez-en un sur <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Dernière mise à jour : 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= DUTCH ======= -->
+  <section class="lang" data-lang="nl" lang="nl">
+    <div class="lang-title">Ondersteuning</div>
+    <div class="meta">We reageren meestal binnen 1–2 werkdagen.</div>
+
+    <h2>Neem contact op</h2>
+    <div class="contact-box">
+      <p>Mail ons op <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">E-mail versturen</a>
+    </div>
+
+    <h2>Veelgestelde vragen</h2>
+
+    <details>
+      <summary>Hoe herstel ik mijn abonnement op een nieuw apparaat?</summary>
+      <p>Open de app, tik op Instellingen → Herstel aankopen. Gebruik dezelfde Apple ID als bij de oorspronkelijke aankoop.</p>
+    </details>
+
+    <details>
+      <summary>Hoe wijzig ik de leeftijdsgroep van mijn kind?</summary>
+      <p>Ga naar Ouderpaneel → kies profiel → Leeftijdsgroep.</p>
+    </details>
+
+    <details>
+      <summary>Zijn de gegevens van mijn kind privé?</summary>
+      <p>Ja. Er wordt niets naar een server gestuurd. Zie het <a href="/privacy/">privacybeleid</a>.</p>
+    </details>
+
+    <details>
+      <summary>Hoe zeg ik mijn abonnement op?</summary>
+      <p>iOS-instellingen → Apple ID → Abonnementen → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>Werkt de app offline?</summary>
+      <p>Ja, 100 %. Geen internet nodig.</p>
+    </details>
+
+    <details>
+      <summary>Is de app beschikbaar op Android?</summary>
+      <p>Nog niet — voorlopig alleen iOS.</p>
+    </details>
+
+    <h2>Een probleem melden</h2>
+    <p>Mail <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> met:</p>
+    <ul>
+      <li>Jouw apparaatmodel.</li>
+      <li>Jouw iOS-versie.</li>
+      <li>Een schermafbeelding indien mogelijk.</li>
+    </ul>
+
+    <h2>Toegankelijkheid</h2>
+    <p>De app ondersteunt Dynamic Type en VoiceOver waar relevant, en kan worden gespeeld met Voorlezen ingeschakeld in Instellingen.</p>
+
+    <h2>Terugbetaling</h2>
+    <p>Terugbetalingen worden door Apple verwerkt. Vraag er een aan op <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Laatst bijgewerkt: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= SPANISH ======= -->
+  <section class="lang" data-lang="es" lang="es">
+    <div class="lang-title">Soporte</div>
+    <div class="meta">Normalmente respondemos en 1–2 días laborables.</div>
+
+    <h2>Contáctanos</h2>
+    <div class="contact-box">
+      <p>Escríbenos a <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Enviar correo</a>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿Cómo restauro mi suscripción en un dispositivo nuevo?</summary>
+      <p>Abre la app, toca Ajustes → Restaurar compras. Usa el mismo ID de Apple con el que se hizo la compra original.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo cambio el grupo de edad de mi hijo/a?</summary>
+      <p>Ve al Panel de padres → selecciona el perfil → Grupo de edad.</p>
+    </details>
+
+    <details>
+      <summary>¿Los datos de mi hijo/a son privados?</summary>
+      <p>Sí. No se envía nada a ningún servidor. Consulta la <a href="/privacy/">Política de privacidad</a>.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo cancelo la suscripción?</summary>
+      <p>Ve a Ajustes de iOS → ID de Apple → Suscripciones → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>¿Funciona la app sin conexión?</summary>
+      <p>Sí, al 100 %. No se necesita Internet.</p>
+    </details>
+
+    <details>
+      <summary>¿Está disponible en Android?</summary>
+      <p>Aún no — solo iOS por ahora.</p>
+    </details>
+
+    <h2>Reportar un problema</h2>
+    <p>Escribe a <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> incluyendo:</p>
+    <ul>
+      <li>Modelo del dispositivo.</li>
+      <li>Versión de iOS.</li>
+      <li>Captura de pantalla si es posible.</li>
+    </ul>
+
+    <h2>Accesibilidad</h2>
+    <p>La app admite Texto dinámico y VoiceOver cuando corresponde, y puede usarse con la opción Leer en voz alta activada en Ajustes.</p>
+
+    <h2>Reembolsos</h2>
+    <p>Los reembolsos los gestiona Apple. Solicítalo en <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Última actualización: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= PORTUGUESE (BR) ======= -->
+  <section class="lang" data-lang="pt-BR" lang="pt-BR">
+    <div class="lang-title">Suporte</div>
+    <div class="meta">Normalmente respondemos em 1–2 dias úteis.</div>
+
+    <h2>Fale conosco</h2>
+    <div class="contact-box">
+      <p>Escreva para <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Enviar e-mail</a>
+    </div>
+
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+      <summary>Como restauro minha assinatura em um novo dispositivo?</summary>
+      <p>Abra o app, toque em Configurações → Restaurar compras. Use o mesmo ID Apple da compra original.</p>
+    </details>
+
+    <details>
+      <summary>Como altero a faixa etária do meu filho(a)?</summary>
+      <p>Vá em Painel dos pais → selecione o perfil → Faixa etária.</p>
+    </details>
+
+    <details>
+      <summary>Os dados do meu filho(a) são privados?</summary>
+      <p>Sim. Nada é enviado a nenhum servidor. Veja a <a href="/privacy/">Política de Privacidade</a>.</p>
+    </details>
+
+    <details>
+      <summary>Como cancelo minha assinatura?</summary>
+      <p>Ajustes do iOS → ID Apple → Assinaturas → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>O app funciona offline?</summary>
+      <p>Sim, 100 %. Não precisa de internet.</p>
+    </details>
+
+    <details>
+      <summary>O app está disponível no Android?</summary>
+      <p>Ainda não — por enquanto só iOS.</p>
+    </details>
+
+    <h2>Relatar um problema</h2>
+    <p>Escreva para <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> informando:</p>
+    <ul>
+      <li>Modelo do dispositivo.</li>
+      <li>Versão do iOS.</li>
+      <li>Captura de tela, se possível.</li>
+    </ul>
+
+    <h2>Acessibilidade</h2>
+    <p>O app suporta Dynamic Type e VoiceOver onde aplicável, e pode ser usado com a opção Ler em voz alta ativada em Configurações.</p>
+
+    <h2>Reembolsos</h2>
+    <p>Os reembolsos são tratados pela Apple. Solicite em <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Última atualização: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= ITALIAN ======= -->
+  <section class="lang" data-lang="it" lang="it">
+    <div class="lang-title">Assistenza</div>
+    <div class="meta">Di solito rispondiamo entro 1–2 giorni lavorativi.</div>
+
+    <h2>Contattaci</h2>
+    <div class="contact-box">
+      <p>Scrivi a <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">Invia e-mail</a>
+    </div>
+
+    <h2>Domande frequenti</h2>
+
+    <details>
+      <summary>Come ripristino l'abbonamento su un nuovo dispositivo?</summary>
+      <p>Apri l'app, tocca Impostazioni → Ripristina acquisti. Usa lo stesso ID Apple dell'acquisto originale.</p>
+    </details>
+
+    <details>
+      <summary>Come cambio la fascia d'età di mio figlio?</summary>
+      <p>Vai nel Pannello genitori → seleziona il profilo → Fascia d'età.</p>
+    </details>
+
+    <details>
+      <summary>I dati di mio figlio sono privati?</summary>
+      <p>Sì. Nulla viene inviato ad alcun server. Vedi l'<a href="/privacy/">Informativa sulla privacy</a>.</p>
+    </details>
+
+    <details>
+      <summary>Come annullo l'abbonamento?</summary>
+      <p>Impostazioni iOS → ID Apple → Abbonamenti → Stella Math.</p>
+    </details>
+
+    <details>
+      <summary>L'app funziona offline?</summary>
+      <p>Sì, al 100 %. Non serve Internet.</p>
+    </details>
+
+    <details>
+      <summary>L'app è disponibile su Android?</summary>
+      <p>Non ancora — per ora solo iOS.</p>
+    </details>
+
+    <h2>Segnala un problema</h2>
+    <p>Scrivi a <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> indicando:</p>
+    <ul>
+      <li>Modello del dispositivo.</li>
+      <li>Versione di iOS.</li>
+      <li>Uno screenshot, se possibile.</li>
+    </ul>
+
+    <h2>Accessibilità</h2>
+    <p>L'app supporta Dynamic Type e VoiceOver dove pertinente e può essere usata con l'opzione Leggi ad alta voce attiva nelle Impostazioni.</p>
+
+    <h2>Rimborsi</h2>
+    <p>I rimborsi sono gestiti da Apple. Richiedine uno su <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>.</p>
+
+    <p class="meta">Ultimo aggiornamento: 2026-04-21.</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= JAPANESE ======= -->
+  <section class="lang" data-lang="ja" lang="ja">
+    <div class="lang-title">サポート</div>
+    <div class="meta">通常、1〜2営業日以内にご返信いたします。</div>
+
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p>メール：<strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">メールを送信</a>
+    </div>
+
+    <h2>よくあるご質問</h2>
+
+    <details>
+      <summary>新しい端末でサブスクリプションを復元するには?</summary>
+      <p>アプリを開き、「設定」→「購入を復元」をタップしてください。元の購入に使用した Apple ID でサインインしてください。</p>
+    </details>
+
+    <details>
+      <summary>お子さまの年齢グループを変更するには?</summary>
+      <p>「保護者パネル」→プロフィールを選択→「年齢グループ」からご変更いただけます。</p>
+    </details>
+
+    <details>
+      <summary>お子さまのデータはプライベートに保たれますか?</summary>
+      <p>はい。データはサーバーに送信されません。詳細は<a href="/privacy/">プライバシーポリシー</a>をご覧ください。</p>
+    </details>
+
+    <details>
+      <summary>サブスクリプションを解約するには?</summary>
+      <p>iOS の「設定」→Apple ID→「サブスクリプション」→「Stella Math」からご解約いただけます。</p>
+    </details>
+
+    <details>
+      <summary>オフラインでも使用できますか?</summary>
+      <p>はい、100% オフラインでご利用いただけます。インターネット接続は不要です。</p>
+    </details>
+
+    <details>
+      <summary>Android 版はありますか?</summary>
+      <p>現時点ではございません。現在は iOS 版のみの提供となります。</p>
+    </details>
+
+    <h2>不具合のご報告</h2>
+    <p><a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a> まで、以下の情報を添えてご連絡ください。</p>
+    <ul>
+      <li>端末のモデル</li>
+      <li>iOS のバージョン</li>
+      <li>可能であればスクリーンショット</li>
+    </ul>
+
+    <h2>アクセシビリティ</h2>
+    <p>本アプリは Dynamic Type および該当箇所での VoiceOver に対応しております。また、「設定」の「読み上げ」機能を有効にしてお楽しみいただけます。</p>
+
+    <h2>返金について</h2>
+    <p>返金は Apple が対応いたします。<a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a> よりご申請ください。</p>
+
+    <p class="meta">最終更新日:2026年4月21日</p>
+  </section>
+
+  <hr class="lang-sep">
+
+  <!-- ======= KOREAN ======= -->
+  <section class="lang" data-lang="ko" lang="ko">
+    <div class="lang-title">지원</div>
+    <div class="meta">보통 영업일 기준 1~2일 이내에 답변드립니다.</div>
+
+    <h2>문의하기</h2>
+    <div class="contact-box">
+      <p>이메일: <strong>support@regnestjernen.no</strong></p>
+      <a href="mailto:support@regnestjernen.no" class="btn">이메일 보내기</a>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+
+    <details>
+      <summary>새 기기에서 구독을 어떻게 복원하나요?</summary>
+      <p>앱을 열고 설정 → 구매 복원을 선택해 주세요. 원래 구매 시 사용한 Apple ID로 로그인해야 합니다.</p>
+    </details>
+
+    <details>
+      <summary>자녀의 연령대를 어떻게 변경하나요?</summary>
+      <p>부모 패널 → 프로필 선택 → 연령대에서 변경하실 수 있습니다.</p>
+    </details>
+
+    <details>
+      <summary>자녀의 데이터는 안전하게 보호되나요?</summary>
+      <p>네. 어떠한 정보도 서버로 전송되지 않습니다. <a href="/privacy/">개인정보 처리방침</a>을 참고해 주세요.</p>
+    </details>
+
+    <details>
+      <summary>구독을 어떻게 해지하나요?</summary>
+      <p>iOS 설정 → Apple ID → 구독 → Stella Math에서 해지하실 수 있습니다.</p>
+    </details>
+
+    <details>
+      <summary>앱이 오프라인에서도 작동하나요?</summary>
+      <p>네, 100 % 오프라인에서 이용 가능합니다. 인터넷 연결이 필요하지 않습니다.</p>
+    </details>
+
+    <details>
+      <summary>Android 버전이 있나요?</summary>
+      <p>아직 없습니다. 현재는 iOS 전용입니다.</p>
+    </details>
+
+    <h2>문제 신고</h2>
+    <p>다음 정보를 포함하여 <a href="mailto:support@regnestjernen.no">support@regnestjernen.no</a>으로 보내 주시기 바랍니다.</p>
+    <ul>
+      <li>기기 모델</li>
+      <li>iOS 버전</li>
+      <li>가능하면 스크린샷</li>
+    </ul>
+
+    <h2>접근성</h2>
+    <p>본 앱은 동적 문자 크기 및 관련 항목에서 VoiceOver를 지원하며, 설정의 "소리내어 읽기" 기능을 켠 상태로 이용하실 수 있습니다.</p>
+
+    <h2>환불</h2>
+    <p>환불은 Apple에서 처리합니다. <a href="https://support.apple.com/HT204084" target="_blank" rel="noopener">support.apple.com/HT204084</a>에서 신청해 주세요.</p>
+
+    <p class="meta">최종 업데이트: 2026년 4월 21일</p>
+  </section>
+
+  </main>
+
+  <footer>
+    <p><a href="/support/">Support</a> &middot; <a href="/privacy/">Privacy</a></p>
+    <p style="margin-top:8px;">&copy; 2026 Jarle Steinnes</p>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var SUPPORTED = ["en","nb","nn","sv","da","fi","de","fr","nl","es","pt-BR","it","ja","ko"];
+    var DEFAULT = "en";
+
+    document.documentElement.classList.add("js-on");
+    document.body.classList.add("js-on");
+
+    function paramLang() {
+      var m = /[?&]lang=([^&]+)/.exec(window.location.search);
+      if (!m) return null;
+      var v = decodeURIComponent(m[1]);
+      for (var i = 0; i < SUPPORTED.length; i++) {
+        if (SUPPORTED[i].toLowerCase() === v.toLowerCase()) return SUPPORTED[i];
+      }
+      return null;
+    }
+
+    function browserLang() {
+      var nav = navigator.language || navigator.userLanguage || "";
+      if (!nav) return null;
+      for (var i = 0; i < SUPPORTED.length; i++) {
+        if (SUPPORTED[i].toLowerCase() === nav.toLowerCase()) return SUPPORTED[i];
+      }
+      var short = nav.slice(0, 2).toLowerCase();
+      if (short === "pt") return "pt-BR";
+      for (var j = 0; j < SUPPORTED.length; j++) {
+        if (SUPPORTED[j].toLowerCase() === short) return SUPPORTED[j];
+      }
+      return null;
+    }
+
+    function show(lang) {
+      var sections = document.querySelectorAll("section.lang");
+      for (var i = 0; i < sections.length; i++) {
+        var s = sections[i];
+        if (s.getAttribute("data-lang") === lang) {
+          s.classList.add("visible");
+        } else {
+          s.classList.remove("visible");
+        }
+      }
+      var buttons = document.querySelectorAll("#langPicker button");
+      for (var b = 0; b < buttons.length; b++) {
+        if (buttons[b].getAttribute("data-lang") === lang) {
+          buttons[b].classList.add("active");
+          buttons[b].setAttribute("aria-current", "true");
+        } else {
+          buttons[b].classList.remove("active");
+          buttons[b].removeAttribute("aria-current");
+        }
+      }
+      document.documentElement.lang = lang;
+      try {
+        var url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        window.history.replaceState({}, "", url.toString());
+      } catch (e) { /* older browsers */ }
+    }
+
+    var initial = paramLang() || browserLang() || DEFAULT;
+    show(initial);
+
+    var picker = document.getElementById("langPicker");
+    picker.addEventListener("click", function (e) {
+      var t = e.target;
+      while (t && t !== picker && t.tagName !== "BUTTON") t = t.parentNode;
+      if (!t || t.tagName !== "BUTTON") return;
+      var lang = t.getAttribute("data-lang");
+      if (lang) show(lang);
+    });
+  })();
+</script>
+
+</body>
+</html>
