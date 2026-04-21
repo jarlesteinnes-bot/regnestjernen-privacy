@@ -1,2 +1,3 @@
 # regnestjernen-privacy
-Privacy policy for Regnestjernen
+
+Multi-language website for the Regnestjernen / Stella Math iOS app.
